@@ -34,6 +34,7 @@ You can monitor new alerts live using alerts_only.py
 nmap -p 21,22,23,25,80,110,443,8080 127.0.0.1
 
 ➤ Simulate ICMP Flood using ping:
+
 ping 127.0.0.1 -t -l 1000 This sends continuous ping requests (ICMP Echo) to your own system, simulating a flood attack. Use Wireshark with the loopback adapter and icmp filter to visually confirm the attack traffic.
 
 Programming Language:
@@ -65,9 +66,11 @@ Command Prompt (CMD)
 Windows OS (with administrator privileges)
 
 Files in the Project:
+
 smart_ids.py – Main IDS detection logic
 alerts_only.py – Real-time alert monitor
 alerts_only_log.txt – Logs alerts output
-icmp loopback capture.pcapng – Wireshark ICMP flood capture
-📄 Note:
+icmp loopback capture.pcapng – Wireshark ICMP flood capture📄
+
+Note:
 The file alerts_only_log.txt will be automatically created when you run smart_ids.py. It stores all detected intrusion alerts in real-time.
